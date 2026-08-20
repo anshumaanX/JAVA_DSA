@@ -1,6 +1,6 @@
 public class JavaBasics {
   public static void main(String arg[]){
-    /*
+/*
     System.out.println("Hello Everyone!");
     System.out.println("Hello Everyone!");
     System.out.print("Hello Everyone!\n");
@@ -19,9 +19,9 @@ public class JavaBasics {
 
     a = b;
     System.out.println(a);
-    */
+*/
 
-
+/*
    // Data types in java
    // primitive - byte short char boolean int long float double
    // non primitive - String Array Class Object Interface
@@ -41,5 +41,6 @@ public class JavaBasics {
    int b = 15;
    int sum = a + b;
    System.out.println(sum);
+*/
   }
 }
