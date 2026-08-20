@@ -1,33 +1,57 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class JavaBasics2 {
-  public static void main (String args[]){
-    Scanner sc = new Scanner(System.in);
-/*
-    // input in java
-    String word = sc.next(); // stores string 'without space'
-    System.out.println(word);
-*/
 
-/*
-    String name = sc.nextLine();
-    System.out.println(name); // stores string 'can have spaces'
-*/
+    public static void main(String args[]) {
 
-/*
-    int number = sc.nextInt();
-    System.out.println(number);
+        // Scanner is used to take input from the user.
+        Scanner sc = new Scanner(System.in);
 
-    float price = sc.nextFloat();
-    System.out.println(price);
-    // same for others as per data type
-*/
 
-    double area = sc.nextDouble();
-    System.out.println(area);    
+        /*
+         * Taking String input
+         *
+         * next() reads a single word.
+         * It does not read spaces.
+         */
+        String word = sc.next();
+        System.out.println(word);
 
-    boolean is_boy = sc.nextBoolean();
-    System.out.println(is_boy);
 
-  }
+        /*
+         * nextLine() reads a complete line.
+         * It can store a String containing spaces.
+         */
+        String name = sc.nextLine();
+        System.out.println(name);
+
+
+        /*
+         * Taking integer input
+         */
+        int number = sc.nextInt();
+        System.out.println(number);
+
+
+        /*
+         * Taking float input
+         */
+        float price = sc.nextFloat();
+        System.out.println(price);
+
+
+        /*
+         * Other data types can also be taken as input
+         * using their respective Scanner methods.
+         */
+
+        double area = sc.nextDouble();
+        System.out.println(area);
+
+        boolean is_boy = sc.nextBoolean();
+        System.out.println(is_boy);
+
+
+        sc.close();
+    }
 }
