@@ -73,10 +73,72 @@ public class Pattern03 {
           System.out.println();
     }
   }
+
+  public static void zero_one_triangle(int n) {
+    // 0 - 1  Triangle
+
+    // 1
+    // 0 1
+    // 1 0 1
+    // 0 1 0 1
+
+    for(int i = 1; i <= n; i++) {
+      for(int j = 1; j <= i; j++) {
+        if( (i + j) % 2 == 0) {
+          System.out.print(1);
+        }else {
+          System.out.print(0);
+        }
+      }
+      System.out.println();
+    }
+  };
+
+  public static void butterfly (int n) {
+    // butterfly pattern
+    // *             *
+    // * *         * *
+    // * * *     * * *
+    // * * * * * * * *
+    // * * * * * * * *
+    // * * *     * * *
+    // * *         * *
+    // *             *
+
+    for(int i = 1; i <= n; i++) {
+
+      for(int j = 1; j <= i; j++) {
+        System.out.print("* ");
+      }
+      for( int j = 1; j<=2*(n-i); j++) {
+        System.out.print("  ");
+      }
+      for(int j = 1; j <= i; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+    for(int i = n; i>=1; i--){
+
+      for(int j = 1; j <= i; j++) {
+        System.out.print("* ");
+      }
+      for( int j = 1; j<=2*(n-i); j++) {
+        System.out.print("  ");
+      }
+      for(int j = 1; j <= i; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+
+    }
+  }
   public static void main (String args[]) {
     hollow_rectangle(6,12);
     inverted_rotated_half_pyramid(5);
     inverted_half_pyramid_numbers(5);
     floyds_triangle(5);
+    zero_one_triangle(5);
+    butterfly(4);
   }
 }
